@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deleteNote, editNote } from "../../redux/actions";
+import { deleteNote, editNote, doneNote } from "../../redux/actions";
 import styles from "../noteItem/styles.module.css";
 import { useState } from "react";
 
@@ -48,9 +48,14 @@ function NoteItem({ note }) {
       ) : (
         <>
           <h3>{note.title}</h3>
-          <p>{note.text}</p>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button onClick={() => dispatch(deleteNote(note.id))}>Delete</button>
+          <p className={note.done ? styles.doneText : ""}>{note.text}</p>
+          <div className={styles.buttons}>
+            <button onClick={() => setIsEditing(true)}>Edit</button>
+            <button onClick={() => dispatch(deleteNote(note.id))}>
+              Delete
+            </button>
+            <button onClick={() => dispatch(doneNote(note.id))}>Done</button>
+          </div>
         </>
       )}
     </div>

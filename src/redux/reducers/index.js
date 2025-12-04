@@ -29,6 +29,15 @@ const noteReducer = (state = initialState, action) => {
     };
   }
 
+  if (action.type === "DONE") {
+    return {
+      ...state,
+      notes: state.notes.map((note) =>
+        note.id === action.payload ? { ...note, done: !note.done } : note
+      ),
+    };
+  }
+
   return state;
 };
 

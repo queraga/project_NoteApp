@@ -18,3 +18,10 @@ export function deleteNote(id) {
     payload: id,
   };
 }
+
+export function doneNote(id) {
+  return {
+    type: "DONE",
+    payload: id,
+  };
+}

@@ -1,16 +1,49 @@
-# React + Vite
+📒 My Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small note-taking application built with React and Redux.
+The project demonstrates state management, component structure, form handling, conditional rendering, and basic UI styling.
 
-Currently, two official plugins are available:
+🚀 Features
+• ➕ Add a new note
+Enter a title and text, then add the note to the list.
+• ✏️ Edit a note
+Change the note’s title or text using Edit, Save, and Cancel buttons.
+• 🗑️ Delete a note
+Remove any note instantly.
+• ✔️ Mark note as done
+A Done button toggles the done state.
+Completed notes are displayed with a strikethrough.
+• 🎨 Clean and simple UI
+Custom styles, including a header and footer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧰 Technologies Used
+• React (functional components with hooks)
+• Redux (actions, reducers, global store)
+• CSS Modules for component-level styling
+• React Hooks:
+• useState
+• useSelector
+• useDispatch
 
-## React Compiler
+🧠 Redux Logic Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app uses four main action types:
 
-## Expanding the ESLint configuration
+🎯 Learning Objectives
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This mini-project was created to practice:
+• Building reusable React components
+• Managing global state with Redux
+• Working with forms and controlled inputs
+• Handling events and conditional UI rendering
+• Using CSS modules for scoped styling
+• Implementing basic CRUD functionality
+
+📝 Future Improvements (TODO)
+• Save notes to localStorage
+• Highlight completed notes visually
+• Add sorting by date / status
+• Add search functionality
+• Improve UI and animations
+
+✍️ Author Queraga https://github.com/queraga 📍 Berlin, Germany

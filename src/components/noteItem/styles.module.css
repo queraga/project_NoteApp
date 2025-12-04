@@ -1,0 +1,11 @@
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.doneText {
+  text-decoration: line-through;
+  color: grey;
+}
